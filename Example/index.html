@@ -1,0 +1,28 @@
+<html>
+<head>
+	<script src="js/b-registration.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery-ui-1.8.18.custom/js/jquery-1.7.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery-ui-1.8.18.custom/js/jquery-ui-1.8.18.custom.min.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="jquery-ui-1.8.18.custom/css/custom-theme/jquery-ui-1.8.18.custom.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+<div id="b-registration-form">
+	<form id="registration">
+		<fieldset style="width:200px; font-size:0.9em" class="ui-widget ui-state-active ui-corner-all">
+			<h3 align="center">Sign Up</h3></br>
+			<label for="mail" id="mail">E-Mail</label><br>
+			<input class="ui-corner-all ui-widget-content text" style="width:100%" type="text" name="user" id="mail" onchange="checkMailRegistration()"/><br>
+			<label for="password" id="passwd">Password</label><br>
+			<input class="ui-corner-all ui-widget-content text" style="width:100%" type="password" name="password" id="passwd" value="" onchange="checkPasswdRegistration()"/><br>
+			<label for="checkpassword" id="checkpasswd">Check Password</label><br>
+			<input class="ui-corner-all ui-widget-content text" style="width:100%" type="password" name="checkpassword" id="checkpasswd" value="" onchange="checkPasswdCheckRegistration()"/><br>
+			<input type="button" id="login-button" value="Sign up" onclick="validateRegistration()">
+		</fieldset>
+	</form>
+</div>
+<script type="text/javascript">
+	$(function() {
+		$("input:button", "#b-registration-form").button();
+	});
+</script>
+</body>

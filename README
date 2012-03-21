@@ -1,0 +1,14 @@
+	DESCRIPTION
+b-registration is a simple registration form that you can put in every web application.
+It require jQuery to work and it use the jQuery ui to set the style.
+
+
+	HOW TO USE
+There's a simple example in the folder Example where you can see how it works.
+
+To make this work you need to change in the b-registration.js script the line that you see 
+commented in the example.
+In this line you must insert the right path of the registrationCheck.php file.
+
+Then in the php folder you must edit the mysql.php file to check your database properties 
+and the registrationCheck.php to edit the query of your database user table.
